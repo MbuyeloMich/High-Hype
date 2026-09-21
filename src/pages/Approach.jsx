@@ -10,13 +10,13 @@ const processes = [
   {
     id: 'brand-website',
     eyebrow: '// Branding + Websites',
-    title: 'From first call to launch, typically 4 weeks.',
-    body: 'Our flagship engagement: brand and marketing site built side by side, so the identity and the surface launch as one cohesive thing.',
+    title: 'From first call to launch, typically 2 weeks.',
+    body: 'Our flagship engagement: brand and marketing site built side by side, so the identity and the live product launch as one cohesive thing.',
     steps: [
       { num: '01', week: 'Week 1', title: 'Discovery',     body: 'Positioning, strategy, audience, market scan, site map, and content plan. We define what success looks like before any visuals start.' },
-      { num: '02', week: 'Week 2', title: 'Direction',     body: 'Visual concepts, logo explorations, type and colour directions. You pick one direction, we lock it.' },
-      { num: '03', week: 'Week 3', title: 'System build',  body: 'Final identity (logo, type, colour, guidelines) and full web design. Identity and site grow together.' },
-      { num: '04', week: 'Week 4', title: 'Build & launch', body: 'No-code build in Framer, Webflow, or Wix Studio. CMS, analytics, SEO basics, QA on staging, and deploy.' },
+      { num: '02', week: 'Week 2', title: 'Direction + build', body: 'We lock the direction, design the system, and build in React, Next.js, or the right production stack for the brief, with Framer or Webflow considered when they fit best.' },
+      { num: '03', week: 'Launch prep', title: 'QA and refinement', body: 'We tighten the interactions, polish the pages, and optimize the production experience before launch.' },
+      { num: '04', week: 'Launch', title: 'Deploy & handoff', body: 'Custom code build, CMS setup, analytics, SEO basics, QA on production, and a clean launch handoff.' },
     ],
   },
   {
@@ -136,9 +136,9 @@ export default function ApproachPage() {
       <SEO
         title="Our approach"
         path="/approach"
-        description="How Soni Labs runs Branding + Websites and Design Partner engagements. Week-by-week cadence and what to expect."
+        description="How High Hype runs Branding + Websites and Design Partner engagements. Week-by-week cadence and what to expect."
       />
-      <h1 className="sr-only">Approach — Soni Labs Studio</h1>
+      <h1 className="sr-only">Approach — High Hype Studio</h1>
 
       {/* Page hero copy — sits above the cover image. Left/right split
           mirrors the Project.jsx title row: eyebrow + heading on the
@@ -167,7 +167,7 @@ export default function ApproachPage() {
           <div className="relative w-full aspect-[1744/830] overflow-hidden bg-base-dark">
             <img
               src={`${import.meta.env.BASE_URL}Processes image.png`}
-              alt="Soni Labs process diagram"
+              alt="High Hype process diagram"
               loading="eager"
               decoding="async"
               className="absolute inset-0 w-full h-full object-cover"

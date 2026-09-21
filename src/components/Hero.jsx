@@ -115,7 +115,7 @@ export default function Hero() {
               style={{ opacity: 0 }}
             >
               <a
-                href="https://calendly.com/madebysoni/30min"
+                href="https://calendly.com/highhypedesigns/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-press flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 sm:px-7 py-3 sm:py-3.5 bg-base-dark text-base-pure rounded-full font-medium text-sm sm:text-base hover:bg-base-dark-soft"

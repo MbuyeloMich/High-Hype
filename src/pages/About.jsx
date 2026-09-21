@@ -6,7 +6,7 @@ import { isSlowOrMeteredConnection } from '../utils/network'
 import { VideoSources } from '../utils/videoSources'
 import SEO from '../components/SEO'
 
-const CALENDLY_URL = 'https://calendly.com/madebysoni/30min'
+const CALENDLY_URL = 'https://calendly.com/highhypedesigns/30min'
 const FOUNDER_BASE = `${import.meta.env.BASE_URL}Founders%20images/`
 // Splits a string into per-word inline-block spans (so words don't break
 // mid-character on line wrap), with each character wrapped in its own
@@ -36,7 +36,7 @@ const principles = [
   {
     num: '01',
     title: 'Senior on every project.',
-    body: 'Samuel leads every engagement directly. No handoff to juniors after the kickoff call.',
+    body: 'Tony leads every engagement directly. No handoff to juniors after the kickoff call.',
   },
   {
     num: '02',
@@ -74,8 +74,8 @@ const clients = [
 ]
 
 const founderStats = [
-  { eyebrow: 'Experience', figure: '14+',    description: 'Years of creative practice in the industry' },
-  { eyebrow: 'Countries',  figure: '6',      description: 'Collaborations with global brands' },
+  { eyebrow: 'Experience', figure: '5 yrs', description: 'Development experience building digital products' },
+  { eyebrow: 'Countries',  figure: '6',     description: 'Collaborations with global brands' },
   { eyebrow: 'Valuation',  figure: '$850M+', description: "Combined clients' valuation" },
 ]
 
@@ -121,9 +121,9 @@ export default function AboutPage() {
     // Manifesto — scroll-linked character colour sweep. Drives the CSS
     // variable --p from 0 → 1 per char. CSS color-mix() interpolates
     // between the theme's initial and final colours, so the sweep is
-    // fully theme-aware (gray → black in light, gray → white in dark,
-    // light-red → red in red theme). scrub: true binds the playhead
-    // to scroll progress so it reverses on scroll-up.
+    // fully theme-aware (gray → black in light, gray → white in dark).
+    // scrub: true binds the playhead to scroll progress so it reverses
+    // on scroll-up.
     const manifestoChars = gsap.utils.toArray('.manifesto-char')
     if (manifestoChars.length > 0) {
       gsap.fromTo(manifestoChars,
@@ -182,9 +182,9 @@ export default function AboutPage() {
       <SEO
         title="About the studio"
         path="/about"
-        description="Soni Labs is a senior design studio led by Samuel Irinyemi, based in Lagos and working with founders and product teams worldwide on brand, product, and web."
+        description="High Hype is a senior design and development studio led by Tony Maluleke, building digital products and websites for founders and product teams worldwide."
       />
-      <h1 className="sr-only">About — Soni Labs Studio</h1>
+      <h1 className="sr-only">About — High Hype Studio</h1>
 
       {/* ── Hero ──────────────────────────────────────────────────────── */}
       <section className="w-full pt-12 md:pt-20 pb-16 md:pb-24 px-4 md:px-6 bg-base-pure">
@@ -195,13 +195,13 @@ export default function AboutPage() {
 
           <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl tracking-tighter leading-[1.05] text-base-dark">
             <span className="overflow-hidden block">
-              <span className="ap-line block pl-12 md:pl-20" style={{ opacity: 0 }}>Soni labs studio<span className="inline-block text-[0.4em] translate-y-[-0.9em] ml-[0.1em]">®</span></span>
+              <span className="ap-line block pl-12 md:pl-20" style={{ opacity: 0 }}>High Hype studio<span className="inline-block text-[0.4em] translate-y-[-0.9em] ml-[0.1em]">®</span></span>
             </span>
             <span className="overflow-hidden block">
-              <span className="ap-line block" style={{ opacity: 0 }}>Backed by 14 years of</span>
+              <span className="ap-line block" style={{ opacity: 0 }}>Backed by 5 years of</span>
             </span>
             <span className="overflow-hidden block">
-              <span className="ap-line block" style={{ opacity: 0 }}>design practice</span>
+              <span className="ap-line block" style={{ opacity: 0 }}>development experience</span>
             </span>
           </h2>
         </div>
@@ -231,16 +231,16 @@ export default function AboutPage() {
       <section className="w-full px-4 md:px-6 py-20 md:py-32 bg-base-pure">
         <div className="max-w-[1600px] mx-auto">
           <p className="manifesto-text font-display font-bold text-4xl md:text-5xl tracking-tighter leading-[1.15] text-gray-300">
-            {manifestoWords('Soni Labs is a design and digital experience studio led by ', 'pre')}
+            {manifestoWords('High Hype is a design studio built for founders and teams who want clear thinking, strong positioning, and digital experiences that travel well across markets.', 'pre')}
             <a
               href="https://www.instagram.com/samirinyemi/"
               target="_blank"
               rel="noopener noreferrer"
               className="manifesto-link italic no-underline"
             >
-              {manifestoWords('Samuel Irinyemi', 'link')}
+              {manifestoWords('Tony Maluleke', 'link')}
             </a>
-            {manifestoWords(', a multidisciplinary designer with 14+ years working across brand, web, and product. Built for founders, startups, and product teams who care about clarity, positioning, and long-term relevance.', 'post')}
+            {manifestoWords(' leads the studio with a global perspective shaped in South Africa and built for ambitious companies working beyond borders.', 'post')}
           </p>
         </div>
       </section>
@@ -253,10 +253,10 @@ export default function AboutPage() {
           {/* Name + role */}
           <div className="ap-bio mb-10 md:mb-14">
             <p className="font-display text-2xl md:text-3xl font-bold text-base-dark leading-tight mb-2">
-              Samuel Irinyemi
+              Tony Maluleke
             </p>
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">
-              Founder &middot; Soni Labs
+              Founder &middot; High Hype
             </p>
           </div>
 
@@ -264,15 +264,15 @@ export default function AboutPage() {
           <div className="ap-bio grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16 gap-y-6 mb-12 md:mb-16 text-subtle text-base md:text-lg leading-relaxed">
             <div className="space-y-5">
               <p>
-                Samuel Irinyemi is a multidisciplinary designer with over 14 years of combined experience across brand, web, and digital product design. Across his career, he&rsquo;s worked with companies based in six countries, contributing to organisations whose combined valuations exceed $850&nbsp;million&nbsp;USD.
+                Tony Maluleke is a multidisciplinary designer and digital product builder with over 14 years of experience across brand, web, and product design. Based in South Africa, he works with ambitious founders and growing businesses building for both local and international markets.
               </p>
             </div>
             <div className="space-y-5">
               <p>
-                Soni Labs is the next chapter of that practice. A studio applying that experience directly to founders, startups, and product teams who care about clarity, positioning, and long-term relevance.
+                High Hype is the next chapter of that work — a studio built for founders, startups, and ambitious teams who want clarity, strong positioning, and digital experiences that hold up on a global stage.
               </p>
               <p>
-                The work lives in the lab. A workspace built around craft. Strategy, design, and decisions all happen in the same room. No pipeline, no producers, no layers between you and the people making the work.
+                The process stays hands-on, focused, and direct. Strategy, design, and decision-making happen in the same room. No bloated pipeline, no unnecessary layers, just sharp thinking and work that moves the business forward.
               </p>
             </div>
           </div>
@@ -282,7 +282,7 @@ export default function AboutPage() {
             <div className="ap-founder-img aspect-square overflow-hidden bg-base-dark">
               <img
                 src={founderImg1}
-                alt="Samuel Irinyemi, founder of Soni Labs"
+                alt="Tony Maluleke, founder of High Hype"
                 className="w-full h-full object-cover"
                 style={{ objectPosition: 'center 25%' }}
               />
@@ -290,7 +290,7 @@ export default function AboutPage() {
             <div className="ap-founder-img aspect-square overflow-hidden bg-base-dark">
               <img
                 src={founderImg5}
-                alt="Samuel Irinyemi"
+                alt="Tony Maluleke"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -333,14 +333,14 @@ export default function AboutPage() {
           <div className="ap-founder-img relative w-full aspect-[3480/1836] overflow-hidden bg-base-dark mb-16 md:mb-24">
             <img
               src={workspaceImg}
-              alt="The Soni Labs workspace"
+              alt="The High Hype workspace"
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover"
             />
           </div>
 
-          {/* Stats — Samuel's track record, not Soni Labs's */}
+          {/* Stats — Samuel's track record, not High Hype's */}
           <div className="ap-stats grid grid-cols-1 sm:grid-cols-3 gap-y-10 gap-x-8 mb-16 md:mb-24 pt-10 md:pt-12 border-t border-base-border">
             {founderStats.map((s) => (
               <div key={s.eyebrow} className="ap-stat flex flex-col gap-3">

@@ -12,7 +12,7 @@ import {
 import Logo from './Logo'
 
 // v2 flag: home-page hero iteration. When true:
-//   - the "Soni Labs." wordmark next to the logo is hidden
+//   - the "High Hype." wordmark next to the logo is hidden
 //   - the bottom border line under the navbar is removed
 //   - menu items + CTA are grouped together on the right (instead of
 //     menu centered, CTA right)
@@ -280,11 +280,10 @@ export default function Navbar({ forceFloating = false, v2 = false }) {
           <a
             href="/"
             onClick={(e) => { e.preventDefault(); navigate('/'); window.scrollTo(0, 0) }}
-            className="nav-logo flex items-center gap-2"
+            className="nav-logo flex items-center"
             style={{ opacity: 0 }}
           >
             <Logo className="w-6 h-6 text-base-dark" />
-            {!v2 && <span className="font-display font-bold text-xl tracking-tight">Soni Labs.</span>}
           </a>
 
           {/* v1: menu sits centered between logo (left) and CTA (right) via
@@ -301,7 +300,7 @@ export default function Navbar({ forceFloating = false, v2 = false }) {
               href="https://www.figma.com/proto/G2xrMflXEVuDWjMLTEXMPF/Samuel-Irinyemi-Portfolio?page-id=0%3A1&node-id=419-14312&p=f&t=8g3FAs6YuhKaSvfE-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=35%3A25506"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Samuel Irinyemi's Figma portfolio prototype"
+              aria-label="View Tony Maluleke's Figma portfolio prototype"
               className="nav-cta cta-press hidden md:inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-medium bg-base-pure text-base-dark border border-base-dark/20 rounded-full hover:bg-base-light"
               style={{ opacity: 0 }}
             >
@@ -314,7 +313,7 @@ export default function Navbar({ forceFloating = false, v2 = false }) {
               </svg>
               Figma
             </a>
-            <a href="https://calendly.com/madebysoni/30min" target="_blank" rel="noopener noreferrer" className="nav-cta cta-press hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium bg-base-dark text-base-pure rounded-full hover:bg-base-dark-soft" style={{ opacity: 0 }}>
+            <a href="https://calendly.com/highhypedesigns/30min" target="_blank" rel="noopener noreferrer" className="nav-cta cta-press hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium bg-base-dark text-base-pure rounded-full hover:bg-base-dark-soft" style={{ opacity: 0 }}>
               Book a call
             </a>
             <button className="md:hidden text-base-dark" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle mobile menu" aria-expanded={mobileMenuOpen}>
@@ -349,10 +348,9 @@ export default function Navbar({ forceFloating = false, v2 = false }) {
           <a
             href="/"
             onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); navigate('/'); window.scrollTo(0, 0) }}
-            className="flex items-center gap-2"
+            className="flex items-center"
           >
             <Logo className="w-8 h-8 text-base-pure" />
-            {!v2 && <span className="font-display font-bold text-xl tracking-tight text-white">Soni Labs.</span>}
           </a>
           <button type="button" aria-label="Close menu" className="text-white" onClick={() => setMobileMenuOpen(false)}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -397,7 +395,7 @@ export default function Navbar({ forceFloating = false, v2 = false }) {
           {/* CTA */}
           <a
             ref={el => mobileMenuItemsRef.current[5] = el}
-            href="https://calendly.com/madebysoni/30min"
+            href="https://calendly.com/highhypedesigns/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-4 text-sm font-medium bg-base-pure text-base-dark rounded-full hover:bg-base-light transition-colors mb-8"

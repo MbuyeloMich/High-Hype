@@ -5,7 +5,7 @@ import {
   prefetchShowcaseAll,
 } from '../utils/showcasePrefetch'
 
-const CALENDLY_URL = 'https://calendly.com/madebysoni/30min'
+const CALENDLY_URL = 'https://calendly.com/highhypedesigns/30min'
 
 const showcaseIntent = () => {
   prefetchShowcaseChunk()
@@ -75,7 +75,7 @@ export default function Footer() {
       <div className="max-w-[1600px] mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-0">
           <span className="font-mono text-xs text-muted leading-snug">
-            &copy; 2026 Soni labs Studio.<br />All rights reserved.
+            &copy; 2026 High Hype.<br />All rights reserved.
           </span>
           <ul className="flex flex-wrap md:justify-end gap-x-5 md:gap-x-7 gap-y-2">
             {[
@@ -119,14 +119,14 @@ export default function Footer() {
         >
           <span
             className="block w-full font-display font-bold tracking-tighter text-base-dark leading-[0.8] whitespace-nowrap text-center"
-            // 26cqw — calibrated so "Soni Labs" with Aeonik bold +
+            // 26cqw — calibrated so "High Hype" with Aeonik bold +
             // tracking-tighter spans the container edge-to-edge.
             // translateY uses em so the crop ratio stays consistent at
             // every size; 0.2em clips roughly 10-15% of the visible
             // letterforms — gentler than 0.3em, firmer than 0.15em.
             style={{ fontSize: '23cqw', transform: 'translateY(0.2em)' }}
           >
-            Soni Labs
+            High Hype
           </span>
         </div>
       </div>

@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react'
 
-// Three-dot theme switcher pinned to the bottom-right corner.
+// Minimal black/white theme switcher pinned to the bottom-right corner.
 // Sets `data-theme` on the <html> element so the per-theme tokens in
 // index.css take effect. Persists the choice in localStorage so it
 // survives page reloads — a tiny inline script in index.html applies
 // the saved theme before paint to avoid a flash of the wrong theme.
-const STORAGE_KEY = 'soni-theme'
+const STORAGE_KEY = 'highhype-theme'
 const THEMES = [
   { id: 'light', label: 'Light theme', color: '#FFFFFF', ringOnLight: true },
   { id: 'dark',  label: 'Dark theme',  color: '#000000', ringOnLight: false },
-  { id: 'red',   label: 'Red theme',   color: '#DA241C', ringOnLight: false },
 ]
 
 function readInitialTheme() {

@@ -6,4 +6,4 @@ Allow: /
 Disallow: /api/
 
 # Point crawlers at the sitemap for efficient discovery
-Sitemap: https://sonilabs.studio/sitemap.xml
+Sitemap: https://highhype.studio/sitemap.xml

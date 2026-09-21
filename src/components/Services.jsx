@@ -5,7 +5,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { prefersReducedMotion } from '../utils/motion'
 
-const CALENDLY_URL = 'https://calendly.com/madebysoni/30min'
+const CALENDLY_URL = 'https://calendly.com/highhypedesigns/30min'
 
 // ── Popover (used for "What's included") ───────────────────────────────
 // Renders via React portal into document.body so it can layer above any
@@ -225,12 +225,12 @@ function BrandWebsiteCard({ expanded = false }) {
     'Brand guidelines document',
     'Web design across the agreed pages',
     'Copywriting and content structure',
-    'No-code build in Framer, Webflow, or Wix Studio',
+    'Custom code build in React, Next.js, or production web stack, with Framer, Webflow, and similar platforms considered when they fit the brief',
     'CMS, analytics, SEO basics, deployment',
     '2 rounds of revisions',
     '1-week post-launch support',
   ]
-  const timeline = 'Typically 4 weeks'
+  const timeline = 'Typically 2 weeks'
 
   // Pitch block — used in both expanded and collapsed renders.
   const Pitch = (
@@ -247,7 +247,7 @@ function BrandWebsiteCard({ expanded = false }) {
       </p>
 
       <p className="text-muted text-sm mb-3 leading-relaxed">
-        Brand design &middot; Web design &middot; No-code development
+        Brand design &middot; Web design &middot; Custom code development
       </p>
 
       <p className="text-muted text-sm mb-6 leading-relaxed">

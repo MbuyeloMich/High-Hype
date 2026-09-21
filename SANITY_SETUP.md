@@ -6,7 +6,7 @@ Run this in a **separate directory** (not inside this Vite project):
 
 ```bash
 cd ~/Downloads
-npm create sanity@latest -- --project-name "soni-labs-cms" --dataset production
+npm create sanity@latest -- --project-name "high-hype-cms" --dataset production
 ```
 
 Follow the prompts to create your Sanity account/project.
@@ -16,7 +16,7 @@ Follow the prompts to create your Sanity account/project.
 Copy the schema files from `sanity-schemas/` in this project into your Sanity Studio's `schemaTypes/` folder:
 
 ```bash
-cp "Claude code/SONI LABS STUDIO/sanity-schemas/"*.js ~/Downloads/soni-labs-cms/schemaTypes/
+cp "Claude code/HIGH HYPE STUDIO/sanity-schemas/"*.js ~/Downloads/high-hype-cms/schemaTypes/
 ```
 
 Then register them in your Studio's `schemaTypes/index.js`:

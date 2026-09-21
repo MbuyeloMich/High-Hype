@@ -1,5 +1,5 @@
 ---
-name: Soni Labs Studio
+name: High Hype Studio
 description: Lagos design studio offering brand, web, and product design under one roof
 colors:
   black: "#000000"
@@ -7,9 +7,8 @@ colors:
   white: "#FFFFFF"
   off-white: "#F2F2F2"
   border: "#E5E5E5"
-  signal-red: "#DA241C"
-  signal-red-deep: "#C72018"
-  highlighter-yellow: "#FAFD3A"
+  accent: "#000000"
+  accent-soft: "#1A1A1A"
 typography:
   display:
     fontFamily: "'Aeonik', system-ui, sans-serif"
@@ -96,7 +95,7 @@ components:
     typography: "{typography.label}"
 ---
 
-# Design System: Soni Labs Studio
+# Design System: High Hype Studio
 
 ## 1. Overview
 
@@ -115,9 +114,9 @@ The system explicitly rejects the saturated reflexes PRODUCT.md names: AI-genera
 - Flat by default. No drop shadows. Depth via tonal layering, never via blur or glow.
 - Generous whitespace; section padding scales `5rem` to `8rem`.
 
-## 2. Colors: The Soni Labs Brand Palette
+## 2. Colors: The High Hype Brand Palette
 
-A high-contrast palette taken directly from the Soni Labs brand identity document. Three neutrals (black, white, off-white), one signature accent, one committed accent. Every color in the system is on-brand or absent.
+A high-contrast palette shaped around the High Hype brand direction. Three neutrals (black, white, off-white) and a restrained monochrome accent system. Every color in the system is intentional and minimal.
 
 ### Primary
 - **Signal Red** (`#DA241C`, also called *Soni Orange-Red*): the studio's voice. Used for headline accents (the closing line in the hero), eyebrow indicator dots, the primary CTA fill, list checkmarks, ambient pillar numbers, and the inline `For` prefix inside service cards. Always small surface area; never the dominant color of any surface except the CTA itself.

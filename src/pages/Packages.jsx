@@ -65,14 +65,14 @@ export default function PackagesPage() {
       <SEO
         title="Packages"
         path="/packages"
-        description="Two ways to work with Soni Labs: Branding + Websites delivered as a single project, or Design Partner — an ongoing senior design seat embedded in your team. Timelines, scope, and what's included. Book a call to discuss."
+        description="Two ways to work with High Hype: Branding + Websites delivered as a single project, or Design Partner — an ongoing senior design seat embedded in your team. Timelines, scope, and what's included. Book a call to discuss."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'Branding + Websites',
-            provider: { '@type': 'Organization', name: 'Soni Labs', url: 'https://sonilabs.studio' },
-            description: 'Brand identity + production website for founders launching or rebranding. Typically 4 weeks.',
+            provider: { '@type': 'Organization', name: 'High Hype', url: 'https://highhype.studio' },
+            description: 'Brand identity + production website for founders launching or rebranding. Typically 2 weeks.',
             serviceType: 'Brand and web design',
             areaServed: 'Worldwide',
           },
@@ -80,7 +80,7 @@ export default function PackagesPage() {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'Design Partner',
-            provider: { '@type': 'Organization', name: 'Soni Labs', url: 'https://sonilabs.studio' },
+            provider: { '@type': 'Organization', name: 'High Hype', url: 'https://highhype.studio' },
             description: 'A dedicated senior designer embedded in your team across brand, web, and product. Ongoing engagement, no fixed minimum.',
             serviceType: 'Design partnership',
             areaServed: 'Worldwide',
@@ -89,7 +89,7 @@ export default function PackagesPage() {
       />
       {/* ── Page hero with brand guideline video — native aspect 3654×2160 ─ */}
       <section className="w-full pt-2 md:pt-4 pb-0 px-4 md:px-6">
-        <h1 className="sr-only">Packages — Soni Labs Studio</h1>
+        <h1 className="sr-only">Packages — High Hype Studio</h1>
         <div className="max-w-[1600px] mx-auto">
           <div className="relative w-full aspect-[3654/2160] overflow-hidden bg-base-dark">
             <video
@@ -117,7 +117,7 @@ export default function PackagesPage() {
             className="sp-intro text-subtle text-lg md:text-xl leading-relaxed max-w-3xl"
             style={{ opacity: 0 }}
           >
-            Soni Labs designs and builds the surfaces that decide whether someone takes you seriously: brand, product, and websites, made under one roof. Pick the engagement that matches what you&rsquo;re shipping. The price follows the conversation, not the page.
+            High Hype designs and builds the surfaces that decide whether someone takes you seriously: brand, product, and websites, made under one roof. Pick the engagement that matches what you&rsquo;re shipping. The price follows the conversation, not the page.
           </p>
         </div>
       </section>

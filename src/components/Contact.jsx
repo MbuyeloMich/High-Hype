@@ -3,7 +3,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { prefersReducedMotion } from '../utils/motion'
 
-const CALENDLY_URL = 'https://calendly.com/madebysoni/30min'
+const CALENDLY_URL = 'https://calendly.com/highhypedesigns/30min'
 
 export default function Contact() {
   const sectionRef = useRef(null)

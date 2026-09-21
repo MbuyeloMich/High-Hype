@@ -5,7 +5,7 @@ import { prefersReducedMotion } from '../utils/motion'
 
 // Fullscreen first-load overlay. Sequence:
 //   1. Counter animates 000.0 → 100.0 over ~3s (top-right corner)
-//   2. Wordmark SONI LABS fades + slides in early
+//   2. Wordmark HIGH HYPE fades + slides in early
 //   3. Ten showcase images pop in one after the other, each rotated a
 //      few degrees, stacked at the centre like a hand of cards
 //   4. Brief pause when the counter hits 100
@@ -153,10 +153,10 @@ export default function Loader({ onComplete }) {
           sibling that moves at its own slower rate, lingers in place
           after the bg has already exited. */}
       <div className="loader-bg absolute inset-0 bg-[#0A0A0A] overflow-hidden">
-        {/* SONI LABS wordmark — bottom centre, large display type. */}
+        {/* HIGH HYPE wordmark — bottom centre, large display type. */}
         <div className="loader-wordmark absolute inset-x-0 bottom-10 md:bottom-16 flex justify-center px-6">
           <span className="font-display font-bold text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tighter leading-none">
-            SONI LABS
+            HIGH HYPE
           </span>
         </div>
       </div>

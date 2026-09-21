@@ -30,40 +30,26 @@
   --font-display: 'Aeonik', system-ui, sans-serif;
   --font-mono: 'Fira Code', monospace;
 
-  /* Brand neutrals (from Soni Labs brand palette).
-     These are the LIGHT theme defaults. Overridden per-theme below via
-     :root[data-theme="..."] blocks. Tailwind v4 generates utility
-     classes (bg-base-dark, text-base-dark, etc.) from these tokens,
-     and the var() lookup respects the cascade at runtime — so theme
-     overrides flow through every usage without touching JSX. */
-  --color-base-light: #F2F2F2;       /* Off-White (card-level tinted surfaces) */
-  --color-base-dark: #000000;        /* Strong ink — text, dark surfaces, accents */
-  --color-base-dark-soft: #1A1A1A;   /* Hover state for dark surfaces */
-  --color-base-pure: #FFFFFF;        /* Page surface */
-  --color-base-border: #E5E5E5;      /* Default border */
-  --color-card-soft: #F3F3F3;        /* Product Design / Design Partner card surface */
-  --color-canvas: #F3F3F3;           /* Showcase canvas / page-level off-white backdrop */
+  /* Brand neutrals for High Hype.
+     Light theme defaults are black and white, with soft neutral surfaces
+     for cards and panels. These tokens are reused across the site and can
+     still switch to a dark theme via the data-theme attribute. */
+  --color-base-light: #F2F2F2;
+  --color-base-dark: #000000;
+  --color-base-dark-soft: #1A1A1A;
+  --color-base-pure: #FFFFFF;
+  --color-base-border: #E5E5E5;
+  --color-card-soft: #F3F3F3;
+  --color-canvas: #F3F3F3;
 
-  /* Theme-aware text scale. text-muted is currently equivalent to
-     Tailwind's text-gray-500; text-subtle is text-gray-600. We swap
-     these per theme so body copy can follow the theme (especially in
-     the red theme, where Tailwind's gray-* would stay gray and break
-     the "all text reads red" intent). */
-  --color-muted: oklch(0.5520 0.0143 256.85);   /* ≈ Tailwind gray-500 */
-  --color-subtle: oklch(0.4460 0.0298 256.80);  /* ≈ Tailwind gray-600 */
+  --color-muted: oklch(0.5520 0.0143 256.85);
+  --color-subtle: oklch(0.4460 0.0298 256.80);
 
-  /* Brand accents — same across all themes. */
-  --color-accent-red: #DA241C;       /* Soni Orange-Red */
-  --color-accent-red-deep: #C72018;  /* hover state — subtle darken, same hue */
-  --color-accent-yellow: #FAFD3A;    /* Brand Yellow (gradient endpoint) */
+  --color-accent-red: #000000;
+  --color-accent-red-deep: #111111;
+  --color-accent-yellow: #FFFFFF;
 }
 
-/* ── DARK theme ──────────────────────────────────────────────────────
-   Strong ink (text, dark surfaces) becomes white. Page surface flips
-   to near-black. Light/card surfaces become deep dark gray so the
-   contrast hierarchy holds. All text — including Tailwind's text-gray-*
-   utility classes — is forced to white via the override below so the
-   page reads as "all text white" without re-tokenising every component. */
 :root[data-theme="dark"] {
   --color-base-light: #1A1A1A;
   --color-base-dark: #FFFFFF;
@@ -77,23 +63,11 @@
   --color-subtle: #FFFFFF;
 }
 
-/* Force every text-gray-* (and text-black) Tailwind utility to white
-   in dark theme — these classes hard-code colour values so the
-   per-theme tokens above don't reach them. The :root[data-theme]
-   ancestor gives this rule higher specificity than the utility class. */
 :root[data-theme="dark"] [class*="text-gray-"],
 :root[data-theme="dark"] .text-black {
   color: #FFFFFF;
 }
 
-/* Scope-exception: inside .flagship-card (the Brand + Website pricing
-   card whose surface inverts via bg-base-dark), descendant text needs
-   to be DARK in dark theme. Target each Tailwind text-* utility class
-   individually rather than `.flagship-card *` — a universal selector
-   would also hit <path> children of the checkmark SVG (whose stroke
-   uses currentColor) and the inner <span> that holds week label text,
-   breaking the accent-red inheritance from their parent. Inheritance
-   carries the right color down to un-classed descendants. */
 :root[data-theme="dark"] .flagship-card {
   color: #0A0A0A;
 }
@@ -107,153 +81,32 @@
   color: #0A0A0A;
 }
 
-/* Dark theme: accent-red elements stay brand-red on the flagship card
-   (the "01" eyebrow, includes-list check icons, week labels in the
-   process timeline). Children inherit so SVG <path> strokes and the
-   inner <span> in week labels pick up the same red. */
 :root[data-theme="dark"] .flagship-card .text-accent-red,
 :root[data-theme="dark"] .flagship-card [class*="text-accent-red"] {
-  color: #DA241C;
+  color: #000000;
 }
 
-/* Re-inversion: nested .bg-base-pure pills inside .flagship-card (the
-   "Book a call" CTA, the active tier toggle highlight) flip back to a
-   light surface in dark theme — so their text-base-dark label needs
-   to be light again to remain readable on the dark pill. */
 :root[data-theme="dark"] .flagship-card .bg-base-pure,
 :root[data-theme="dark"] .flagship-card .bg-base-pure * {
   color: #FFFFFF;
 }
 
-/* Active tier-toggle button is a sibling of the .bg-base-pure pill,
-   not a descendant — target it directly so its label reads on the
-   near-black pill in dark theme. */
 :root[data-theme="dark"] .flagship-card [aria-selected="true"] {
   color: #FFFFFF;
 }
 
-/* ── RED theme ───────────────────────────────────────────────────────
-   Warm cream page background (#EDE3DD) with brand red as the strong
-   ink. Strong ink (was black) becomes brand red — text, dark surfaces
-   (flagship card, dark CTAs) all become red. White text on those red
-   surfaces stays legible. Tinted surfaces (base-light, card-soft) and
-   borders shift to warm tones so they harmonize with the cream bg
-   rather than clashing as cool grays on a warm bg. Muted body copy
-   becomes a darker red so it follows the theme without competing with
-   primary red headings. */
-:root[data-theme="red"] {
-  --color-base-pure: #EDE3DD;
-  --color-base-light: #E5DAD3;
-  --color-base-dark: #DA241C;
-  /* dark-soft (hover state) intentionally matches base-dark so the
-     entire red theme uses a single red — no darker variant. CTA scale
-     transform still provides press feedback on hover/active. */
-  --color-base-dark-soft: #DA241C;
-  --color-base-border: #D8CCC4;
-  --color-card-soft: #E3D7D0;
-  --color-canvas: #EDE3DD;
-
-  /* muted + subtle both collapse to brand red in red theme. */
-  --color-muted: #DA241C;
-  --color-subtle: #DA241C;
-}
-
-/* Force every text-gray-* utility to a muted red in red theme so all
-   text follows the theme instead of staying gray. Same approach as the
-   dark theme override above. */
-:root[data-theme="red"] [class*="text-gray-"],
-:root[data-theme="red"] .text-black {
-  color: #DA241C;
-}
-
-/* Scope-exception for red theme: inside .flagship-card (the Brand +
-   Website pricing card whose surface becomes brand red), descendant
-   text needs to be WHITE so it reads on the red surface. Same
-   class-by-class approach as the dark scope-exception above so the
-   accent-red elements (which we now want white in red theme) inherit
-   correctly down to their SVG paths / inner spans. */
-:root[data-theme="red"] .flagship-card {
-  color: #FFFFFF;
-}
-:root[data-theme="red"] .flagship-card [class*="text-gray-"],
-:root[data-theme="red"] .flagship-card [class*="text-white"],
-:root[data-theme="red"] .flagship-card .text-black,
-:root[data-theme="red"] .flagship-card .text-base-pure,
-:root[data-theme="red"] .flagship-card .text-base-dark:not([aria-selected="true"]):not(.bg-base-pure),
-:root[data-theme="red"] .flagship-card .text-muted,
-:root[data-theme="red"] .flagship-card .text-subtle,
-:root[data-theme="red"] .flagship-card .text-accent-red,
-:root[data-theme="red"] .flagship-card [class*="text-accent-red"] {
-  color: #FFFFFF;
-}
-
-/* Re-inversion: nested .bg-base-pure pills inside .flagship-card (the
-   "Book a call" CTA, the active tier toggle highlight) flip back to a
-   cream surface in red theme — so their text-base-dark label needs to
-   be brand red again to remain readable on the cream pill. */
-:root[data-theme="red"] .flagship-card .bg-base-pure,
-:root[data-theme="red"] .flagship-card .bg-base-pure * {
-  color: #DA241C;
-}
-
-/* The active tier-toggle button sits on top of the .bg-base-pure pill
-   (cream in red theme) as a sibling, not a descendant — the rule above
-   doesn't reach it. Target the selected button directly via
-   aria-selected so its label reads as brand red on the cream pill. */
-:root[data-theme="red"] .flagship-card [aria-selected="true"] {
-  color: #DA241C;
-}
-
-/* Dark theme — nav menu popup: bg-base-dark = white surface in dark
-   theme, so all menu text needs to be BLACK. Universal-selector
-   approach so inherited-color children are caught. */
 :root[data-theme="dark"] .nav-popup,
 :root[data-theme="dark"] .nav-popup * {
   color: #0A0A0A;
 }
 
-/* Re-inversion: the CTA inside .nav-popup sits on a bg-base-pure pill
-   (= near-black in dark theme), so its label needs to be light again. */
 :root[data-theme="dark"] .nav-popup .bg-base-pure,
 :root[data-theme="dark"] .nav-popup .bg-base-pure * {
   color: #FFFFFF;
 }
 
-/* Red theme — nav menu popup: bg-base-dark = brand red, force all
-   menu text to WHITE for legibility. Universal-selector approach so
-   children that inherit color (e.g. <span> without an explicit color
-   class) are caught as well. */
-:root[data-theme="red"] .nav-popup,
-:root[data-theme="red"] .nav-popup * {
-  color: #FFFFFF;
-}
-
-/* Re-inversion: the CTA inside .nav-popup sits on a cream
-   (bg-base-pure) pill, so its label needs to be brand red, not white. */
-:root[data-theme="red"] .nav-popup .bg-base-pure,
-:root[data-theme="red"] .nav-popup .bg-base-pure * {
-  color: #DA241C;
-}
-
-/* Kinetic louver bars in red theme — the default 40% opacity reads as
-   washed-out red on the warm cream bg. Force full opacity so each bar
-   is unmistakably the brand red. JS still controls element-level
-   opacity for the cursor proximity wave, so the rest of the
-   interactive behaviour is unchanged. */
-:root[data-theme="red"] .kinetic-bar {
+:root[data-theme="dark"] .kinetic-bar {
   background-color: var(--color-base-dark);
-}
-
-/* About-page client logo tiles in red theme — bg-card-soft becomes a
-   warm dusty rose that visually clashes with the brand logos on the
-   tiles. Force the same neutral light-gray surface light theme uses
-   so the logos read cleanly against a neutral chip. Dark theme's
-   bg-card-soft (deep neutral gray) is left alone. */
-:root[data-theme="red"] .ap-client-tile {
-  background-color: #F3F3F3;
-}
-:root[data-theme="red"] .ap-client-tile:hover {
-  background-color: #ECECEC;
 }
 
 body {
@@ -317,23 +170,7 @@ button:disabled,
               background 220ms ease;
 }
 
-/* Red theme: the default-state cursor is a small solid brand-red dot
-   (no blend). The bigger grow / view / drag states switch back to the
-   standard white-on-difference cursor so the content underneath stays
-   visible — a solid red 56-88px circle would otherwise blanket the
-   button/card you're hovering. */
-:root[data-theme="red"] .custom-cursor {
-  background: #DA241C;
-  color: #FFFFFF;
-  mix-blend-mode: normal;
-}
-:root[data-theme="red"] .custom-cursor[data-state="grow"],
-:root[data-theme="red"] .custom-cursor[data-state="view"],
-:root[data-theme="red"] .custom-cursor[data-state="drag"] {
-  background: #FFFFFF;
-  color: #000000;
-  mix-blend-mode: difference;
-}
+/* Cursor remains monochrome in both light and dark themes. */
 .custom-cursor-label {
   font-size: 11px;
   letter-spacing: 0.15em;
@@ -386,11 +223,6 @@ button:disabled,
 :root[data-theme="dark"] .manifesto-text {
   --m-init: rgb(209 213 219); /* same light gray — still readable on dark bg */
   --m-final: #FFFFFF;          /* white — the dark-theme reading end */
-}
-:root[data-theme="red"] .proj-manifesto-text,
-:root[data-theme="red"] .manifesto-text {
-  --m-init: #F5C5C1;            /* very light red — soft start that fits the warm bg */
-  --m-final: #DA241C;           /* brand red — the red-theme reading end */
 }
 .proj-manifesto-char,
 .manifesto-char {

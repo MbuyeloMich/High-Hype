@@ -429,8 +429,7 @@ export default function ProjectPage() {
     // Manifesto char sweep — drives the CSS variable --p from 0 → 1
     // per char. CSS color-mix() interpolates between the theme's
     // initial and final colours, so the sweep is fully theme-aware
-    // (gray → black in light, gray → white in dark, light-red → red
-    // in red theme).
+    // (gray → black in light, gray → white in dark).
     gsap.utils.toArray('.proj-manifesto-text').forEach((block) => {
       const chars = block.querySelectorAll('.proj-manifesto-char')
       if (chars.length === 0) return
@@ -534,7 +533,7 @@ export default function ProjectPage() {
       <SEO
         title={project.name}
         path={`/work/${slug}`}
-        description={project.paragraphs?.introPractice || `${project.name}: a Soni Labs case study covering ${(project.services || []).join(', ').toLowerCase()}.`}
+        description={project.paragraphs?.introPractice || `${project.name}: a High Hype case study covering ${(project.services || []).join(', ').toLowerCase()}.`}
         ogType="article"
         ogImage={project.assets?.cover || project.assets?.hero1}
         jsonLd={[
@@ -542,23 +541,23 @@ export default function ProjectPage() {
             '@context': 'https://schema.org',
             '@type': 'CreativeWork',
             name: project.name,
-            url: `https://sonilabs.studio/work/${slug}`,
-            description: project.paragraphs?.introPractice || `${project.name} case study by Soni Labs.`,
+            url: `https://highhype.studio/work/${slug}`,
+            description: project.paragraphs?.introPractice || `${project.name} case study by High Hype.`,
             creator: {
               '@type': 'Organization',
-              name: 'Soni Labs',
-              url: 'https://sonilabs.studio',
+              name: 'High Hype',
+              url: 'https://highhype.studio',
             },
             keywords: (project.services || []).join(', '),
-            image: project.assets?.cover ? `https://sonilabs.studio${project.assets.cover}` : undefined,
+            image: project.assets?.cover ? `https://highhype.studio${project.assets.cover}` : undefined,
           },
           {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sonilabs.studio/' },
-              { '@type': 'ListItem', position: 2, name: 'Projects', item: 'https://sonilabs.studio/projects' },
-              { '@type': 'ListItem', position: 3, name: project.name, item: `https://sonilabs.studio/work/${slug}` },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://highhype.studio/' },
+              { '@type': 'ListItem', position: 2, name: 'Projects', item: 'https://highhype.studio/projects' },
+              { '@type': 'ListItem', position: 3, name: project.name, item: `https://highhype.studio/work/${slug}` },
             ],
           },
         ]}

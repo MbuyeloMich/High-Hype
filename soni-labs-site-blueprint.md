@@ -1,4 +1,4 @@
-# Soni Labs — Website Action Plan
+# High Hype — Website Action Plan
 
 A section-by-section blueprint for what to change, what to cut, and what to add before launch.
 

@@ -14,7 +14,7 @@ Their job-to-be-done is to find a single trustworthy partner who can ship brand 
 
 ## Product Purpose
 
-Soni Labs is a Lagos-based design studio led by Samuel Irinyemi, working with a small bench of trusted collaborators across brand, motion, and engineering. The studio offers three engagements: Brand + Website (flagship, 4–6 weeks), Product Design / UI/UX (4–6 weeks, design-only handoff), and Design Partner (ongoing retainer).
+High Hype is a Lagos-based design studio led by Samuel Irinyemi, working with a small bench of trusted collaborators across brand, motion, and engineering. The studio offers three engagements: Brand + Website (flagship, 4–6 weeks), Product Design / UI/UX (4–6 weeks, design-only handoff), and Design Partner (ongoing retainer).
 
 The site exists to convert a small number of high-fit founders into discovery calls. Volume is not the goal; signal is. Success looks like qualified inbound — founders who already self-identified with the studio's positioning before the call, so the call is about scope and fit, not pitch.
 
@@ -37,7 +37,7 @@ This studio should never look or sound like:
 - **Corporate consultancy aesthetic.** Navy + gray palette, stock photography, legalese tone, IBM/enterprise framing. The studio is not selling to procurement.
 - **Maximalist brutalist.** Aggressive grids, clashing type, raw-HTML aesthetics. Restraint, not noise. The reference for restraint is klime.studio's discipline with backgrounds (the level of restraint to aim for, not the visual style to copy).
 
-The site explicitly does not sell AI as a deliverable, automation, chatbots, lead-gen-while-you-sleep, or 24/7 magic. AI may surface only as a production methodology inside the Why Soni Labs and process narrative.
+The site explicitly does not sell AI as a deliverable, automation, chatbots, lead-gen-while-you-sleep, or 24/7 magic. AI may surface only as a production methodology inside the Why High Hype and process narrative.
 
 ## Design Principles
 

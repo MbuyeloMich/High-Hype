@@ -1,11 +1,11 @@
 import { Helmet } from 'react-helmet-async'
 
 // Per-page SEO helper. Drop one of these at the top of each route page.
-// Title is appended with " — Soni Labs" automatically (except the home
+// Title is appended with " — High Hype" automatically (except the home
 // page, which uses the bare brand title). Description, OG, and Twitter
 // tags all get sensible defaults from the props.
-const SITE_NAME = 'Soni Labs'
-const SITE_URL = 'https://sonilabs.studio'
+const SITE_NAME = 'High Hype'
+const SITE_URL = 'https://highhype.studio'
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`
 
 export default function SEO({

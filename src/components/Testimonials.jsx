@@ -22,7 +22,7 @@ const fallbackTestimonials = [
     name: 'Marcus Chen',
     role: 'CEO',
     company: 'Nexus AI',
-    quote: '"Working with Soni Labs was the best decision for our launch. Samuel didn\'t just build what we asked for, he designed a system that actually generates leads. The speed was incredible."',
+    quote: '"Working with High Hype was the best decision for our launch. Samuel didn\'t just build what we asked for, he designed a system that actually generates leads. The speed was incredible."',
     featured: false,
   },
   {

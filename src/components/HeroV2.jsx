@@ -218,7 +218,7 @@ export default function HeroV2() {
 
             <div className="flex flex-row items-stretch gap-3 sm:gap-4">
               <a
-                href="https://calendly.com/madebysoni/30min"
+                href="https://calendly.com/highhypedesigns/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hv2-cta cta-press flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 sm:px-7 py-3 sm:py-3.5 bg-base-dark text-base-pure rounded-full font-medium text-sm sm:text-base hover:bg-base-dark-soft whitespace-nowrap"
@@ -231,7 +231,7 @@ export default function HeroV2() {
                 href="https://www.figma.com/proto/G2xrMflXEVuDWjMLTEXMPF/Samuel-Irinyemi-Portfolio?page-id=0%3A1&node-id=419-14312&p=f&t=8g3FAs6YuhKaSvfE-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=35%3A25506"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View Samuel Irinyemi's Figma portfolio prototype"
+                aria-label="View Tony Maluleke's Figma portfolio prototype"
                 className="hv2-cta cta-press flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 sm:px-7 py-3 sm:py-3.5 bg-transparent text-base-dark border border-base-dark/20 rounded-full font-medium text-sm sm:text-base hover:bg-base-dark/5 whitespace-nowrap"
                 style={{ opacity: 0 }}
               >

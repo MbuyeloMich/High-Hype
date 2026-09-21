@@ -7,9 +7,9 @@ export default function EnquirePage() {
       <SEO
         title="Book a strategy call"
         path="/enquire"
-        description="Book a 30-minute strategy call with Soni Labs. We'll diagnose what you need and propose a path. No pitch, no pressure."
+        description="Book a 30-minute strategy call with High Hype. We'll diagnose what you need and propose a path. No pitch, no pressure."
       />
-      <h1 className="sr-only">Enquire — Soni Labs Studio</h1>
+      <h1 className="sr-only">Enquire — High Hype Studio</h1>
       <Contact />
     </>
   )

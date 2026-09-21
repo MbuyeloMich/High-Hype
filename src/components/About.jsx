@@ -39,7 +39,7 @@ export default function About() {
         <div className="about-paras grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="lg:col-span-7 space-y-6">
             <p className="about-para text-subtle text-lg leading-relaxed">
-              Soni Labs is a design studio led by Samuel Irinyemi, working with a small bench of trusted collaborators across brand, motion, and engineering. We work with founders and product teams who care about how things feel, not just how they look.
+              High Hype is a design studio led by Tony Maluleke, working with a small bench of trusted collaborators across brand, motion, and engineering. We work with founders and product teams who care about how things feel, not just how they look.
             </p>
             <p className="about-para text-subtle text-lg leading-relaxed">
               We&rsquo;re based in Lagos and work with clients across the US, UK, Europe, and Australia. Senior taste, modern tooling, and a relationship that lasts beyond the launch.
@@ -48,10 +48,10 @@ export default function About() {
 
           <div className="about-founder lg:col-span-5">
             <div className="bg-base-pure rounded-[12px] border border-base-border p-6 md:p-8 flex items-center gap-4 md:gap-5">
-              <div className="w-16 h-16 rounded-full bg-base-dark flex items-center justify-center text-base-pure font-display font-bold text-2xl shrink-0">S</div>
+              <div className="w-16 h-16 rounded-full bg-base-dark flex items-center justify-center text-base-pure font-display font-bold text-2xl shrink-0">T</div>
               <div>
-                <p className="font-display font-bold text-lg text-base-dark">Samuel Irinyemi</p>
-                <p className="font-mono text-xs uppercase tracking-wider text-muted mt-1">Founder &middot; Soni Labs</p>
+                <p className="font-display font-bold text-lg text-base-dark">Tony Maluleke</p>
+                <p className="font-mono text-xs uppercase tracking-wider text-muted mt-1">Founder &middot; High Hype</p>
                 <p className="text-sm text-subtle mt-3 leading-relaxed">Designing brand systems, products, and websites for over a decade.</p>
               </div>
             </div>

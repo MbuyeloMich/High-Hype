@@ -50,7 +50,7 @@ const items = [
   { id: '18', name: 'sato',       type: 'image', file: 'D4 — Sato ® · Photography.webp',                         w: 1742, h: 1053 },
   { id: '19', name: 'meridian',   type: 'image', file: 'D6 — Meridian Atelier · Perfume essay.webp',             w: 1742, h: 1053 },
   { id: '20', name: 'crumb',      type: 'image', file: 'D8 - Crumb - Bakery and Cafe.webp',                      w: 1742, h: 1053 },
-  { id: '21', name: 'mockup',     type: 'image', file: 'Device Mockup By Soni Labs3.webp',                       w: 2880, h: 1951 },
+  { id: '21', name: 'mockup',     type: 'image', file: 'Device Mockup By High Hype3.webp',                       w: 2880, h: 1951 },
   { id: '22', name: 'hero',       type: 'image', file: 'Hero.webp',                                              w: 1742, h: 1053 },
   { id: '23', name: 'vision',     type: 'image', file: 'Vision Board.webp',                                      w: 1742, h: 1047 },
 
@@ -144,7 +144,7 @@ function ItemMedia({ item }) {
   return (
     <img
       src={mediaSrc(item.file)}
-      alt={`${item.name.charAt(0).toUpperCase() + item.name.slice(1)} — design concept by Soni Labs`}
+      alt={`${item.name.charAt(0).toUpperCase() + item.name.slice(1)} — design concept by High Hype`}
       loading="lazy"
       decoding="async"
       className="block w-full h-full object-cover pointer-events-none"
@@ -774,7 +774,7 @@ function Lightbox({ open, items, index, onClose, onPrev, onNext }) {
         ) : (
           <img
             src={mediaSrc(item.file)}
-            alt={`${item.name.charAt(0).toUpperCase() + item.name.slice(1)} — design concept by Soni Labs`}
+            alt={`${item.name.charAt(0).toUpperCase() + item.name.slice(1)} — design concept by High Hype`}
             className="block w-full h-full object-cover"
           />
         )}
@@ -838,9 +838,9 @@ export default function ShowcasePage() {
       <SEO
         title="Showcase"
         path="/showcase"
-        description="Brand and product design from Soni Labs. Case work and concept explorations across editorial, fintech, hospitality, and sport."
+        description="Brand and product design from High Hype. Case work and concept explorations across editorial, fintech, hospitality, and sport."
       />
-      <h1 className="sr-only">Showcase — Soni Labs Studio</h1>
+      <h1 className="sr-only">Showcase — High Hype Studio</h1>
 
       {/* Keyboard skip-link — lets keyboard users jump past the long pan
           canvas / list of thumbnails to the page controls without

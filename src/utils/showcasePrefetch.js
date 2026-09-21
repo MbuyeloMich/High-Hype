@@ -41,7 +41,7 @@ const REMAINING_FILES = [
   'D4 — Sato ® · Photography.webp',
   'D6 — Meridian Atelier · Perfume essay.webp',
   'D8 - Crumb - Bakery and Cafe.webp',
-  'Device Mockup By Soni Labs3.webp',
+  'Device Mockup By High Hype3.webp',
   'Hero.webp',
   'Vision Board.webp',
   'Desktop Elegant 2.mp4',
