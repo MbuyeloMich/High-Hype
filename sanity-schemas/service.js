@@ -1,3 +1,4 @@
+// High Hype service schema.
 export default {
   name: 'service',
   title: 'Service',

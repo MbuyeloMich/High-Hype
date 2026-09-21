@@ -1,3 +1,4 @@
+// High Hype FAQ schema.
 export default {
   name: 'faq',
   title: 'FAQ',

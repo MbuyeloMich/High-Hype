@@ -1,3 +1,4 @@
+// High Hype testimonial schema.
 export default {
   name: 'testimonial',
   title: 'Testimonial',

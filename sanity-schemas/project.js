@@ -1,3 +1,4 @@
+// High Hype project schema.
 export default {
   name: 'project',
   title: 'Project',
