@@ -70,7 +70,7 @@ const clients = [
 const founderStats = [
   { eyebrow: 'Experience', figure: '5 yrs', description: 'Development experience building digital products' },
   { eyebrow: 'Countries',  figure: '6',     description: 'Collaborations with global brands' },
-  { eyebrow: 'Valuation',  figure: '$850M+', description: "Combined clients' valuation" },
+  { eyebrow: 'Valuation',  figure: 'R2m', description: "Combined clients' valuation" },
 ]
 
 // Track-record logos. Five projects came through Samuel's prior agency
