@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <rect x="90" y="80" width="1020" height="470" rx="32" fill="#111111" stroke="#1F1F1F"/>
+
+  <g transform="translate(170 130)">
+    <g fill="#1FCB73">
+      <circle cx="110" cy="120" r="74"/>
+      <circle cx="238" cy="120" r="74"/>
+      <circle cx="174" cy="240" r="42"/>
+    </g>
+  </g>
+
+  <g fill="white">
+    <text x="500" y="260" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="700" letter-spacing="2">HIGH HYPE</text>
+    <text x="500" y="332" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="500" letter-spacing="8" opacity="0.8">BRAND • PRODUCT • WEB</text>
+  </g>
+</svg>
