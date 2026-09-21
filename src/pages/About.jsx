@@ -7,7 +7,6 @@ import { VideoSources } from '../utils/videoSources'
 import SEO from '../components/SEO'
 
 const CALENDLY_URL = 'https://calendly.com/highhypedesigns/30min'
-const FOUNDER_BASE = `${import.meta.env.BASE_URL}Founders%20images/`
 // Splits a string into per-word inline-block spans (so words don't break
 // mid-character on line wrap), with each character wrapped in its own
 // `manifesto-char` span for the scroll-driven gray→black color reveal.
@@ -26,11 +25,6 @@ function manifestoWords(text, keyPrefix) {
   })
   return out
 }
-
-// Two portraits + the workspace shot used in the merged Led by section.
-const founderImg1 = `${FOUNDER_BASE}C3881T01.webp`
-const founderImg5 = `${FOUNDER_BASE}kOG0G5Dxv85PTLpWc47mipLUFxI.webp`
-const workspaceImg = `${FOUNDER_BASE}Workspace.webp`
 
 const principles = [
   {
@@ -277,23 +271,10 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Two founder portraits, side-by-side */}
+          {/* Blank portrait slots for founder imagery to be added later */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-16 md:mb-24">
-            <div className="ap-founder-img aspect-square overflow-hidden bg-base-dark">
-              <img
-                src={founderImg1}
-                alt="Tony Maluleke, founder of High Hype"
-                className="w-full h-full object-cover"
-                style={{ objectPosition: 'center 25%' }}
-              />
-            </div>
-            <div className="ap-founder-img aspect-square overflow-hidden bg-base-dark">
-              <img
-                src={founderImg5}
-                alt="Tony Maluleke"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <div className="ap-founder-img aspect-square overflow-hidden bg-base-soft border border-base-border" aria-label="Founder photo placeholder" />
+            <div className="ap-founder-img aspect-square overflow-hidden bg-base-soft border border-base-border" aria-label="Founder photo placeholder" />
           </div>
 
           {/* Track record — brands the founder has shipped work for. Most
@@ -329,16 +310,8 @@ export default function AboutPage() {
             </ul>
           </div>
 
-          {/* Full-width workspace image — native aspect (3480×1836) */}
-          <div className="ap-founder-img relative w-full aspect-[3480/1836] overflow-hidden bg-base-dark mb-16 md:mb-24">
-            <img
-              src={workspaceImg}
-              alt="The High Hype workspace"
-              loading="lazy"
-              decoding="async"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          {/* Blank workspace placeholder for the founder/workspace image */}
+          <div className="ap-founder-img relative w-full aspect-[3480/1836] overflow-hidden bg-base-soft border border-base-border mb-16 md:mb-24" aria-label="Workspace photo placeholder" />
 
           {/* Stats — Samuel's track record, not High Hype's */}
           <div className="ap-stats grid grid-cols-1 sm:grid-cols-3 gap-y-10 gap-x-8 mb-16 md:mb-24 pt-10 md:pt-12 border-t border-base-border">
