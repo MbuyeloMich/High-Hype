@@ -170,7 +170,7 @@ export default function App() {
           itself once its exit animation completes, so we don't need to
           conditionally unmount it (that would cut off the parallax). */}
       <Loader onExitStart={() => setLoaderDone(true)} />
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL || '/'}>
         <AppLayout />
       </BrowserRouter>
     </LoaderContext.Provider>
