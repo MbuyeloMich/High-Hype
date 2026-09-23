@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Navbar from './components/Navbar'
@@ -173,6 +174,7 @@ export default function App() {
       <BrowserRouter basename={import.meta.env.BASE_URL || '/'}>
         <AppLayout />
       </BrowserRouter>
+      <Analytics />
     </LoaderContext.Provider>
   )
 }
