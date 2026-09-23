@@ -79,7 +79,7 @@ export default function Footer() {
           </span>
           <ul className="flex flex-wrap md:justify-end gap-x-5 md:gap-x-7 gap-y-2">
             {[
-              { label: 'Email',     href: 'mailto:heyitsamirinyemi@gmail.com' },
+              { label: 'Email',     href: 'mailto:hello@highhype.studio' },
               { label: 'Instagram', href: 'https://www.instagram.com/' },
               { label: 'Twitter',   href: 'https://x.com/' },
               { label: 'LinkedIn',  href: 'https://www.linkedin.com/' },
