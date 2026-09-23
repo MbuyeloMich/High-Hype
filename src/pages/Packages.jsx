@@ -65,7 +65,7 @@ export default function PackagesPage() {
       <SEO
         title="Packages"
         path="/packages"
-        description="Two ways to work with High Hype: Branding + Websites delivered as a single project, or Design Partner — an ongoing senior design seat embedded in your team. Timelines, scope, and what's included. Book a call to discuss."
+        description="Two ways to work with High Hype: Branding + Websites delivered as a single project, or Collaborator — an ongoing senior design resource embedded in your team as a contractor or collaborator. Timelines, scope, and what's included. Book a call to discuss."
         jsonLd={[
           {
             '@context': 'https://schema.org',
@@ -79,10 +79,10 @@ export default function PackagesPage() {
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Design Partner',
+            name: 'Collaborator',
             provider: { '@type': 'Organization', name: 'High Hype', url: 'https://highhype.studio' },
-            description: 'A dedicated senior designer embedded in your team across brand, web, and product. Ongoing engagement, no fixed minimum.',
-            serviceType: 'Design partnership',
+            description: 'A dedicated senior designer embedded in your team across brand, web, and product. Ongoing engagement as a contractor or collaborator.',
+            serviceType: 'Design collaboration',
             areaServed: 'Worldwide',
           },
         ]}

@@ -29,7 +29,7 @@ const fallbackTestimonials = [
     name: 'Sarah Jenkins',
     role: 'Founder',
     company: 'Flowstate',
-    quote: '"The Embedded Design Partner retainer changed how we operate. Instead of hiring a full-time designer, we get top-tier UI/UX and immediate implementation. Huge ROI for our lean team."',
+    quote: '"The embedded collaborator model changed how we operate. Instead of hiring a full-time designer, we get top-tier UI/UX and immediate implementation. Huge ROI for our lean team."',
     featured: true,
   },
   {

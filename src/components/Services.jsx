@@ -465,14 +465,14 @@ function DesignPartnerCard({ expanded = false }) {
       </div>
 
       <span className="font-mono text-xs uppercase tracking-[0.2em] text-accent-red mb-3 block">02</span>
-      <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-base-dark">Design Partner</h3>
+      <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-base-dark">Collaborator</h3>
 
       <p className="text-subtle text-base md:text-lg mb-3 leading-relaxed">
-        Ongoing capacity, not a project. A senior designer embedded in your team, designing brand, product, and marketing work week after week.
+        Ongoing design capacity without the overhead of a full-time hire. We work as an embedded collaborator or contractor inside your team, shipping brand, product, and marketing work week after week.
       </p>
 
       <p className="text-muted text-sm mb-3 leading-relaxed">
-        Embedded design &middot; senior seat, no hiring overhead
+        Embedded design &middot; senior capacity, no hiring overhead
       </p>
 
       <p className="text-muted text-sm mb-6 leading-relaxed">
@@ -482,7 +482,7 @@ function DesignPartnerCard({ expanded = false }) {
       <div className="border-t border-base-dark/10 pt-5 mb-6">
         <p className="font-mono text-[10px] uppercase tracking-wider text-muted mb-2">// What you walk away with</p>
         <p className="text-subtle text-sm md:text-base leading-relaxed">
-          Senior design output shipping on your roadmap, brand consistency across every touchpoint, and strategic input on the decisions that shape how the company is seen.
+          Senior design output shipping on your roadmap, brand consistency across every touchpoint, and strategic guidance that helps you move faster without hiring a full-time designer.
         </p>
       </div>
     </>

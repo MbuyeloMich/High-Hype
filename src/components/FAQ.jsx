@@ -8,15 +8,15 @@ import { prefersReducedMotion } from '../utils/motion'
 const fallbackFaqData = [
   {
     question: 'Which package is right for me?',
-    answer: 'If you’re starting from scratch or rebranding, start with Brand + Website. If you already have a brand and need a digital product designed (UI/UX for your engineering team to build), that’s Product Design. If you have ongoing design needs and don’t want to hire full-time, the Design Partner retainer covers everything across brand, web, and product.',
+    answer: 'If you’re starting from scratch or rebranding, start with Brand + Website. If you already have a brand and need a digital product designed (UI/UX for your engineering team to build), that’s Product Design. If you have ongoing design needs and don’t want to hire full-time, our Collaborator model gives you senior support across brand, web, and product work.',
   },
   {
     question: 'What platforms do you build on?',
     answer: 'Marketing sites: Framer, Webflow, or Wix Studio, depending on your CMS and team setup. For digital products, we design the UI/UX and hand off to your engineering team. We can work inside your existing stack and tooling.',
   },
   {
-    question: 'What does the Design Partner retainer include month to month?',
-    answer: 'A dedicated senior designer working as part of your team. Typically 30–40 hours of design output per week across product features, marketing pages, and brand assets. We use your tools, join your standups, and operate on your roadmap.',
+    question: 'What does the Collaborator engagement include month to month?',
+    answer: 'A dedicated senior designer working as part of your team. Typically 30–40 hours of design output per week across product features, marketing pages, and brand assets. We use your tools, join your standups, and operate on your roadmap as a trusted contractor or collaborator.',
   },
   {
     question: 'Can you work with my existing brand guidelines?',

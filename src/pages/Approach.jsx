@@ -21,9 +21,9 @@ const processes = [
   },
   {
     id: 'design-partner',
-    eyebrow: '// Design Partner',
+    eyebrow: '// Collaborator',
     title: 'A typical month with the studio embedded in your team.',
-    body: 'Ongoing engagement. Sprint planning to retro, every month.',
+    body: 'Ongoing design collaboration. Sprint planning to retro, every month.',
     steps: [
       { num: '01', week: 'Week 1', title: 'Sprint planning',  body: 'Priority lock against your roadmap. First deliverables shipped by end of week so the rhythm starts immediately.' },
       { num: '02', week: 'Week 2', title: 'Active design',    body: 'Daily iteration inside your tools (Figma, Slack, your standups). The studio works as part of the team, not a vendor.' },
@@ -153,7 +153,7 @@ export default function ApproachPage() {
               </h2>
             </div>
             <p className="text-subtle text-lg md:text-xl leading-relaxed max-w-2xl">
-              Each engagement follows its own cadence, tuned to what&rsquo;s being built and how the team works. Here&rsquo;s how Branding + Websites and Design Partner each move from brief to final product.
+              Each engagement follows its own cadence, tuned to what&rsquo;s being built and how the team works. Here&rsquo;s how Branding + Websites and Collaborator engagements move from brief to final product.
             </p>
           </div>
         </div>

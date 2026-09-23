@@ -43,8 +43,8 @@ export default function ServicesTeaser() {
     },
     {
       num: '02',
-      name: 'Design Partner',
-      tag: 'Project · Partnership',
+      name: 'Collaborator',
+      tag: 'Project · Collaboration',
       cadence: 'Ongoing',
       slug: 'design-partner',
     },
@@ -66,7 +66,7 @@ export default function ServicesTeaser() {
             </h2>
           </div>
           <p className="text-subtle text-base md:text-lg max-w-md leading-relaxed">
-            Pick the engagement that matches where you are: a launch-ready brand and site delivered as one project, or an ongoing senior design partner embedded in your team.
+            Pick the engagement that matches where you are: a launch-ready brand and site delivered as one project, or an embedded senior designer working as a collaborator or contractor inside your team.
           </p>
         </div>
 
