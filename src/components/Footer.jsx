@@ -80,9 +80,9 @@ export default function Footer() {
           <ul className="flex flex-wrap md:justify-end gap-x-5 md:gap-x-7 gap-y-2">
             {[
               { label: 'Email',     href: 'mailto:heyitsamirinyemi@gmail.com' },
-              { label: 'Instagram', href: 'https://www.instagram.com/samirinyemi/' },
-              { label: 'Twitter',   href: 'https://x.com/samuel_uiux' },
-              { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/samuel-irinyemi-703643183/' },
+              { label: 'Instagram', href: 'https://www.instagram.com/' },
+              { label: 'Twitter',   href: 'https://x.com/' },
+              { label: 'LinkedIn',  href: 'https://www.linkedin.com/' },
             ].map(({ label, href }) => (
               <li key={label}>
                 <a

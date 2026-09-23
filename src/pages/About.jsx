@@ -227,7 +227,7 @@ export default function AboutPage() {
           <p className="manifesto-text font-display font-bold text-4xl md:text-5xl tracking-tighter leading-[1.15] text-gray-300">
             {manifestoWords('High Hype is a design studio built for founders and teams who want clear thinking, strong positioning, and digital experiences that travel well across markets.', 'pre')}
             <a
-              href="https://www.instagram.com/samirinyemi/"
+              href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="manifesto-link italic no-underline"
