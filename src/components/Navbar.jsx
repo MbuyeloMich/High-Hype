@@ -297,10 +297,10 @@ export default function Navbar({ forceFloating = false, v2 = false }) {
             {v2 && renderMenuItems()}
 
             <a
-              href="https://www.figma.com/proto/G2xrMflXEVuDWjMLTEXMPF/Samuel-Irinyemi-Portfolio?page-id=0%3A1&node-id=419-14312&p=f&t=8g3FAs6YuhKaSvfE-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=35%3A25506"
+              href="mailto:newtoneffct0@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Tony Maluleke's Figma portfolio prototype"
+              aria-label="Contact newtoneffct0@gmail.com via email"
               className="nav-cta cta-press hidden md:inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-medium bg-base-pure text-base-dark border border-base-dark/20 rounded-full hover:bg-base-light"
               style={{ opacity: 0 }}
             >
