@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Navbar from './components/Navbar'
@@ -77,6 +78,7 @@ function AppLayout() {
       <ScrollToTopOnNavigate />
       <CustomCursor />
       <ThemeSwitcher />
+      <SpeedInsights />
       {/* Skip-to-content for keyboard users — visually hidden until focused */}
       <a
         href="#main"
