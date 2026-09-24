@@ -228,10 +228,10 @@ export default function HeroV2() {
                 <span className="hidden sm:inline">Book a strategy call</span>
               </a>
               <a
-                href="mailto:newtoneffct0@gmail.com"
+                href="mailto:newtoneffect0@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Contact newtoneffct0@gmail.com via email"
+                aria-label="Contact newtoneffect0@gmail.com via email"
                 className="hv2-cta cta-press flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 sm:px-7 py-3 sm:py-3.5 bg-transparent text-base-dark border border-base-dark/20 rounded-full font-medium text-sm sm:text-base hover:bg-base-dark/5 whitespace-nowrap"
                 style={{ opacity: 0 }}
               >

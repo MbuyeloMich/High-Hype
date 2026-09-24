@@ -297,10 +297,10 @@ export default function Navbar({ forceFloating = false, v2 = false }) {
             {v2 && renderMenuItems()}
 
             <a
-              href="mailto:newtoneffct0@gmail.com"
+              href="mailto:newtoneffect0@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Contact newtoneffct0@gmail.com via email"
+              aria-label="Contact newtoneffect0@gmail.com via email"
               className="nav-cta cta-press hidden md:inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-medium bg-base-pure text-base-dark border border-base-dark/20 rounded-full hover:bg-base-light"
               style={{ opacity: 0 }}
             >
